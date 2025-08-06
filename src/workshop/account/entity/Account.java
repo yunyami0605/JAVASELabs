@@ -4,6 +4,17 @@ public class Account {
 	private String custId;
 	private String accId;
 	private int balance;
+
+	public Account() {
+		System.out.println("test");
+	}
+	
+	public Account(String custId, String accId, int balance) {
+		this.custId = custId;
+		this.accId = accId;
+		this.balance = balance;
+		
+	}
 	
 	public void setBalance(int balance){
 		this.balance = balance;
