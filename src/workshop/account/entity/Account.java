@@ -1,5 +1,7 @@
 package workshop.account.entity;
 
+import exception.InsufficientBalanceException;
+
 public class Account {
 	private String custId;
 	private String accId;
@@ -46,7 +48,13 @@ public class Account {
 	}
 	
 	// 출금
-	public void withdrawal(int amount) {
-		this.balance -= amount;
-	}
+		public void withdraw(int amount) throws InsufficientBalanceException {
+			//잔액부족
+			if(amount > this.balance) {
+				String errMessage = String.format("잔액이 부족합니다. (요청 금액: %d, 현재 잔액: %d)", amount, this.balance);
+				//Exception 강제로 발생 시킴
+				throw new InsufficientBalanceException(errMessage);
+			}
+			this.balance -= amount;
+		}
 }
