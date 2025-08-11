@@ -65,7 +65,7 @@ public class Bank {
     }
 
     public void printAllAccounts() {
-        System.out.println("모든 계좌 목록");
+        System.out.println("모든 계좌 목록:");
         for (Account acc : this.accounts) {
             System.out.println(acc);
         }
