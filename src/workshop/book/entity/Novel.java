@@ -28,7 +28,10 @@ public class Novel extends Publication {
 		this.genre = genre;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Novel";
+	}
 
 	
 }

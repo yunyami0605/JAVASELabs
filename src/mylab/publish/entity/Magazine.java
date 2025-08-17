@@ -14,8 +14,8 @@ public class Magazine extends Publication{
 
     
     public Magazine(String title, String publishDate, int page, int price, String publishPeriod) { 
-        super(title, publishDate, page, price); // 부모 생성자 호출 
-        this.publishPeriod = publishPeriod; // 자신만의 속성 초기화 
+        super(title, publishDate, page, price);
+        this.publishPeriod = publishPeriod;
     }
 
 

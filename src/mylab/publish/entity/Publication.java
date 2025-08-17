@@ -21,7 +21,7 @@ public class Publication {
 	private int page;
 	private int price;
 	
-	public Publication() {} // 매개변수 생성자: 모든 필드 초기화 
+	public Publication() {}
 	public Publication(String title, String publishDate, int page, int price) {
 		this.title = title;
 		this.publishDate = publishDate;
@@ -32,9 +32,21 @@ public class Publication {
 	public String getTitle() {
         return this.title;
     }
+	
+	public void setTitle(String title) {
+        this.title = title;
+    }
 
     public String getPublishDate() {
         return this.publishDate;
+    }
+    
+    public void setPublishDate(String publishDate) {
+        this.publishDate = publishDate;
+    }
+    
+    public void setPage(int page) {
+        this.page = page;
     }
 
     public int getPage() {

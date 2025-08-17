@@ -17,5 +17,9 @@ public class Magazine extends Publication {
 	public void setPublishingPeriod(String publishingPeriod) {
 		this.publishingPeriod = publishingPeriod;
 	}
-
+	
+	@Override
+	public String toString() {
+		return "Publication";
+	}
 }

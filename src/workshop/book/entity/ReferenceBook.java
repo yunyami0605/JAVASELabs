@@ -17,4 +17,9 @@ public class ReferenceBook extends Publication {
 	public void setField(String field) {
 		this.field = field;
 	}
+	
+	@Override
+	public String toString() {
+		return "REF BOOK";
+	}
 }
